@@ -1,0 +1,4 @@
+Neural Networks & Deep Learning
+pydantic
+BLEU, ROUGE (text overlap), BERTScore 
+harness, loops, agent state

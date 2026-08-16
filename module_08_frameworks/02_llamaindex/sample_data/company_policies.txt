@@ -1,0 +1,52 @@
+# TechNova Inc. — Company Policies Handbook (Excerpt)
+
+## Remote Work Policy
+
+TechNova supports a hybrid work model. All employees may work remotely up to 3 days per week. 
+Full remote status requires VP-level approval and is limited to roles classified as "location-independent."
+
+### Eligibility
+- Full-time employees who have completed their 90-day probation period
+- Contractors on engagements longer than 6 months (with manager approval)
+- Interns are NOT eligible for remote work
+
+### Equipment
+The company provides a $1,500 one-time stipend for home office setup. This covers:
+- Monitor, keyboard, mouse
+- Ergonomic chair (up to $500)
+- Internet upgrade costs (up to $50/month reimbursement)
+
+### Communication Standards
+- All remote employees must be available on Slack during core hours (10am-4pm local time)
+- Video must be ON for all client-facing meetings
+- Daily async standup posts are required in the team's #standup channel
+
+## PTO (Paid Time Off) Policy
+
+TechNova offers unlimited PTO with the following guidelines:
+- Minimum 15 days off per year (enforced by HR)
+- Maximum consecutive days: 10 business days without VP approval
+- Requests must be submitted at least 2 weeks in advance for periods longer than 3 days
+- Blackout periods: Last 2 weeks of each quarter (Q1-Q4 close)
+
+### Sick Leave
+- Unlimited sick days (no documentation needed for 1-2 days)
+- 3+ consecutive sick days require a doctor's note
+- Mental health days count as sick leave — no questions asked
+
+## Performance Review Process
+
+Reviews happen twice per year:
+- **Mid-Year Review** (June): Informal check-in, goal adjustment
+- **Annual Review** (December): Formal evaluation, compensation discussion
+
+### Rating Scale
+1. **Needs Improvement** — Performance consistently below expectations
+2. **Meets Expectations** — Solid, reliable contributor
+3. **Exceeds Expectations** — Goes above and beyond regularly  
+4. **Exceptional** — Top 10% performer, promotion candidate
+
+### Promotion Criteria
+- Must be rated "Exceeds Expectations" or above for 2 consecutive review cycles
+- Must have sponsorship from a senior leader outside their direct reporting chain
+- Must complete the company's leadership development program (for management track)

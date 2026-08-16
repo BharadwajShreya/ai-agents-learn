@@ -1,0 +1,51 @@
+# TechNova Inc. — Product Documentation
+
+## Product: NovaMail — AI Email Assistant
+
+### Overview
+NovaMail is TechNova's flagship AI-powered email assistant. It uses a fine-tuned LLM to help professionals draft, summarize, and prioritize emails. NovaMail integrates with Gmail, Outlook, and Apple Mail.
+
+### Key Features
+
+#### 1. Smart Compose
+NovaMail can draft complete email replies based on:
+- The incoming email content
+- Your writing style (learned from your sent emails over 2 weeks)
+- Calendar context (e.g., "I'm free Thursday afternoon" from your actual calendar)
+
+**Accuracy**: 87% of drafts are sent with zero edits (internal benchmark, Q1 2026)
+
+#### 2. Email Summarization
+For long email threads (5+ messages), NovaMail generates:
+- A 2-sentence summary
+- Action items extracted from the thread
+- Decision points that need your input
+
+**Supported Languages**: English, Spanish, French, German, Japanese, Korean
+
+#### 3. Priority Inbox
+NovaMail scores each email on a 1-10 urgency scale based on:
+- Sender relationship (boss = high, newsletter = low)
+- Content keywords ("urgent", "deadline", "ASAP")
+- Historical response patterns (emails you always reply to quickly)
+
+### Technical Architecture
+- **Model**: Fine-tuned Llama 3.2 8B (quantized to 4-bit for edge deployment)
+- **Latency**: < 200ms for draft generation (P95)
+- **Privacy**: All processing happens on-device for free tier. Cloud processing available for enterprise features.
+- **API Rate Limits**: 
+  - Free tier: 50 drafts/day
+  - Pro ($9.99/month): 500 drafts/day
+  - Enterprise (custom): Unlimited
+
+### Known Limitations
+- Does not handle attachments (planned for v2.1)
+- Calendar integration requires OAuth re-auth every 90 days
+- Smart Compose quality degrades for emails longer than 2000 words
+- Not recommended for legal or compliance-sensitive communications
+
+### Roadmap (2026)
+- Q3: Attachment summarization (PDF, DOCX)
+- Q3: Slack integration
+- Q4: Multi-language Smart Compose (currently English only for drafting)
+- Q4: Meeting scheduling agent (suggest times based on both parties' calendars)

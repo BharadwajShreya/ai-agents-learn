@@ -1,0 +1,59 @@
+# TechNova Inc. — Engineering Best Practices
+
+## Code Review Guidelines
+
+### Who Reviews?
+- All PRs require at least 2 approvals
+- At least 1 reviewer must be a senior engineer (L5+)
+- For security-sensitive code (auth, payments, PII), a security team member must approve
+
+### What to Look For
+1. **Correctness**: Does the code do what it claims?
+2. **Tests**: Are there unit tests? Integration tests? Edge cases covered?
+3. **Performance**: Any N+1 queries? Unbounded loops? Missing pagination?
+4. **Security**: SQL injection? XSS? Hardcoded secrets?
+5. **Readability**: Would a new team member understand this in 6 months?
+
+### SLA
+- Reviews must be completed within 24 business hours
+- If a reviewer is OOO, they must delegate to another reviewer
+- "LGTM" without reading the code is grounds for a performance discussion
+
+## Incident Response Playbook
+
+### Severity Levels
+- **SEV-1 (Critical)**: Service is down for all users. Revenue impact. Page on-call immediately.
+- **SEV-2 (Major)**: Significant feature degradation. 30%+ users affected. Slack alert + 15-min response.
+- **SEV-3 (Minor)**: Edge case bug. Workaround exists. Fix in next sprint.
+- **SEV-4 (Low)**: Cosmetic issue. Log it, fix when convenient.
+
+### On-Call Rotation
+- Teams rotate weekly (Monday 9am to Monday 9am)
+- Primary on-call must respond to pages within 5 minutes
+- Secondary on-call is backup if primary doesn't acknowledge within 10 minutes
+- Compensation: $500/week for on-call duty + $200 per after-hours page
+
+### Post-Incident Review
+All SEV-1 and SEV-2 incidents require a blameless postmortem within 48 hours:
+1. Timeline of events
+2. Root cause analysis (5 Whys)
+3. Action items with owners and due dates
+4. Updated runbook if applicable
+
+## API Design Standards
+
+### REST Conventions
+- Use plural nouns for resources: `/api/v2/users`, not `/api/v2/user`
+- Use HTTP methods correctly: GET (read), POST (create), PUT (full update), PATCH (partial update), DELETE
+- Always version your API: `/api/v2/...`
+- Return proper HTTP status codes (don't return 200 with an error body)
+
+### Rate Limiting
+- Default: 100 requests/minute per API key
+- Burst: Allow 20 requests/second for short bursts
+- Return `429 Too Many Requests` with `Retry-After` header
+
+### Authentication
+- All APIs use OAuth 2.0 with JWT tokens
+- Token expiry: 1 hour (access), 30 days (refresh)
+- API keys for service-to-service communication (rotated every 90 days)
