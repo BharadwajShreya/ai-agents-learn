@@ -36,13 +36,17 @@
 
 ### Module 4: Advanced RAG Architectures
 - [x] Study chunking strategies (fixed, recursive, semantic, structure-aware, parent-child)
-- [ ] Study embedding models & vector databases
-- [ ] Study retrieval strategies (sparse, dense, hybrid, reranking)
-- [ ] Study advanced RAG patterns (Agentic, Graph, Self-RAG, CRAG)
-- [ ] Study multimodal RAG (ColPali, document screenshots)
-- [ ] Study RAG evaluation (RAGAS, faithfulness, hallucination)
+- [x] Study embedding models & vector databases
+
+- [x] Study retrieval strategies (sparse, dense, hybrid, reranking)
+- [x] Study advanced RAG patterns (Agentic, Graph, Self-RAG, CRAG)
+- [x] Study multimodal RAG (ColPali, document screenshots)
+
+- [x] Study RAG evaluation (RAGAS, faithfulness, hallucination)
 - [ ] 🛠️ Build Enterprise Multimodal RAG System
+  - [ ] Include lightweight Graph RAG exercise (entity extraction → graph traversal → compare with standard RAG)
 - [ ] 📝 Practice Module 4 interview questions (14 questions)
+
 
 ### Module 5: Fine-Tuning & Model Optimization
 - [ ] Study when to fine-tune vs RAG vs prompting

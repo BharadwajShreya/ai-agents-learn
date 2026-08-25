@@ -10,6 +10,57 @@ A structured, module-based preparation plan that interleaves **concept learning*
 
 ---
 
+## 📍 Progress Checkpoint (Last Updated: 2026-08-25)
+
+```
+COMPLETED:
+  ✅ Module 1: LLM Internals (all sessions + project + interview questions)
+  ✅ Module 2: Reasoning & Multimodal (all sessions + project + interview questions)
+  ✅ Module 3: Advanced Prompting (all sessions + project, interview questions pending)
+  ✅ Module 4 Sessions 4.1-4.6: Teaching complete for all RAG topics
+     - 4.1 Chunking strategies
+     - 4.2 Embedding models & vector databases  
+     - 4.3 Retrieval strategies (sparse, dense, hybrid, reranking)
+     - 4.4 Advanced RAG patterns (Agentic, Graph, Self-RAG, CRAG)
+     - 4.5 Multimodal RAG (ColPali, CLIP, document intelligence)
+     - 4.6 RAG evaluation (RAGAS, faithfulness, hallucination)
+  ✅ Module 7: Agent Foundations (completed earlier, out of order)
+  ✅ Module 8: Frameworks (LangGraph + LlamaIndex, completed earlier)
+
+CURRENT:
+  🔨 Module 4 Session 4.7: Enterprise RAG System PROJECT
+     - System design document created: module_04_advanced_rag/session_4_7_project_plan.md
+     - Uses OpenRouter (free models) + local HuggingFace embeddings + ChromaDB
+     - 6-phase build plan ready, starting from Phase 1
+     - Open questions on sample docs and multimodal scope still to decide
+
+REMAINING for Module 4:
+  [ ] Build Enterprise RAG System (Session 4.7 — 6 phases)
+  [ ] Practice Module 4 interview questions (14 questions)
+
+REMAINING overall:
+  [ ] Module 3 interview questions (10 questions)
+  [ ] Module 5: Fine-Tuning & Model Optimization
+  [ ] Module 6: SLMs, Edge & Routing
+  [ ] Module 9: Multi-Agent & Production
+  [ ] Module 10: Capstone
+```
+
+### Key Files & Notes Location
+- **Comprehensive notes:** `module_04_advanced_rag/notes.md` (~2600 lines covering Sessions 4.1-4.6)
+- **Session 4.7 project plan:** `module_04_advanced_rag/session_4_7_project_plan.md`
+- **Task tracker:** `task_tracker.md` (checkboxes for all modules)
+- **OpenRouter setup pattern:** See `module_08_frameworks/01_langgraph/03_langgraph_real_agent.py` lines 69-89
+- **Embedding setup pattern:** See `module_08_frameworks/02_llamaindex/02_rag_pipeline.py` lines 44-49
+
+### Teaching Style Preferences
+- User prefers **detailed diagrams and worked examples** in saved notes (not condensed summaries)
+- User wants **end-to-end project experience** (planning → design → execution) for SSE/architect roles
+- Build in **phases** so there's time to digest each step
+
+---
+
+
 ## 📋 Plan Overview
 
 ### Learning Structure
