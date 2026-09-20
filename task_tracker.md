@@ -43,7 +43,7 @@
 - [x] Study multimodal RAG (ColPali, document screenshots)
 
 - [x] Study RAG evaluation (RAGAS, faithfulness, hallucination)
-- [ ] 🛠️ Build Enterprise Multimodal RAG System
+- [/] 🛠️ Build Enterprise Multimodal RAG System (in progress — ingestion, retrieval, generation, evaluation built; UI + graph RAG pending)
   - [ ] Include lightweight Graph RAG exercise (entity extraction → graph traversal → compare with standard RAG)
 - [ ] 📝 Practice Module 4 interview questions (14 questions)
 

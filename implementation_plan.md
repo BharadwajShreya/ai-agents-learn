@@ -57,6 +57,9 @@ REMAINING overall:
 - User prefers **detailed diagrams and worked examples** in saved notes (not condensed summaries)
 - User wants **end-to-end project experience** (planning → design → execution) for SSE/architect roles
 - Build in **phases** so there's time to digest each step
+- **Pure Python first:** Use native Python (`@dataclass`, raw APIs, standard library) for core domain logic. Only use LangChain/LlamaIndex at the edges via adapter methods. This builds deeper understanding and avoids framework lock-in.
+- **Phase-wise code walkthroughs:** Don't just run scripts — explain what each component does, why it was designed that way, and what the architectural trade-offs are before running
+
 
 ---
 

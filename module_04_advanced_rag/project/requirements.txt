@@ -1,0 +1,66 @@
+# Enterprise RAG System - Dependencies
+# ======================================
+#
+# DESIGN DECISION: Why these specific packages?
+#
+# LLM & Framework:
+#   langchain + langchain-openai → we use LangChain because it provides
+#   a consistent interface for LLMs, embeddings, and vector stores.
+#   OpenRouter uses OpenAI-compatible API, so langchain-openai works.
+#
+# Embeddings:
+#   sentence-transformers → runs locally, FREE, no API key needed.
+#   We use all-MiniLM-L6-v2 (~80MB) for demos. In production, you'd
+#   use text-embedding-3-large or a domain-specific model.
+#
+# Vector Store:
+#   chromadb → local, in-process, zero setup. For production, you'd
+#   use Qdrant, Pinecone, or Weaviate (managed, scalable).
+#
+# PDF Processing:
+#   pymupdf (fitz) → fastest Python PDF parser, handles text + images.
+#   pdfplumber → better for table extraction (structured data).
+#   We use BOTH because they have complementary strengths.
+#
+# Sparse Search:
+#   rank-bm25 → pure Python BM25 implementation. No external service.
+#
+# Reranker:
+#   We reuse sentence-transformers for the cross-encoder reranker.
+#
+# Evaluation:
+#   ragas → standard framework for RAG evaluation.
+#
+# UI:
+#   streamlit → fast to build interactive demos.
+
+# --- Core ---
+langchain>=0.3.0
+langchain-openai>=0.2.0
+langchain-community>=0.3.0
+langchain-huggingface>=0.1.0
+
+# --- Embeddings & Reranking ---
+sentence-transformers>=3.0.0
+
+# --- Vector Store ---
+chromadb>=0.5.0
+
+# --- PDF Processing ---
+pymupdf>=1.24.0
+pdfplumber>=0.11.0
+
+# --- Sparse Search ---
+rank-bm25>=0.2.2
+
+# --- Evaluation ---
+ragas>=0.2.0
+datasets>=2.0.0
+
+# --- UI ---
+streamlit>=1.38.0
+
+# --- Utilities ---
+python-dotenv>=1.0.0
+tabulate>=0.9.0
+matplotlib>=3.8.0

@@ -1,0 +1,51 @@
+{
+  "strategy": "hybrid",
+  "num_questions": 5,
+  "avg_faithfulness": 1.0,
+  "avg_answer_relevance": 0.8383894702079212,
+  "avg_context_precision": 0.46569343065693436,
+  "avg_context_recall": 1.0,
+  "avg_latency": 4.911153411865234,
+  "per_question": [
+    {
+      "question": "What was Acme Corporation's total revenue in Q3 2025?",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.8636545062194363,
+      "context_precision": 0.6569343065693432,
+      "context_recall": 1.0,
+      "latency": 13.621039390563965
+    },
+    {
+      "question": "How much did Acme's cloud services revenue grow in Q3 2025?",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.7451429012502218,
+      "context_precision": 0.10948905109489052,
+      "context_recall": 1.0,
+      "latency": 3.9434173107147217
+    },
+    {
+      "question": "What was Acme's EBITDA margin in Q3 2025?",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.8165067108558322,
+      "context_precision": 0.5255474452554745,
+      "context_recall": 1.0,
+      "latency": 2.751993179321289
+    },
+    {
+      "question": "How much revenue did Acme's AI accelerator chips generate in Q3 2025?",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.9039180370556259,
+      "context_precision": 0.23357664233576644,
+      "context_recall": 1.0,
+      "latency": 2.2411983013153076
+    },
+    {
+      "question": "How much did Acme pay for the NeuralPath acquisition?",
+      "faithfulness": 1.0,
+      "answer_relevance": 0.8627251956584898,
+      "context_precision": 0.8029197080291971,
+      "context_recall": 1.0,
+      "latency": 1.9981188774108887
+    }
+  ]
+}

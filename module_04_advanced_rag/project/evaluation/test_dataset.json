@@ -1,0 +1,152 @@
+[
+  {
+    "question": "What was Acme Corporation's total revenue in Q3 2025?",
+    "ground_truth": "Acme Corporation's total revenue in Q3 2025 was $4.2 billion, representing a 15% increase year-over-year.",
+    "source_documents": ["acme_q3_2025_earnings.md", "acme_q3_2025_earnings_report.pdf"]
+  },
+  {
+    "question": "How much did Acme's cloud services revenue grow in Q3 2025?",
+    "ground_truth": "Cloud services revenue reached $2.1 billion in Q3 2025, up 28% year-over-year from $1.64 billion in Q3 2024.",
+    "source_documents": ["acme_q3_2025_earnings.md"]
+  },
+  {
+    "question": "What was Acme's EBITDA margin in Q3 2025?",
+    "ground_truth": "Acme's EBITDA margin was 28.6%, expanding 180 basis points from Q3 2024's margin of 26.8%.",
+    "source_documents": ["acme_q3_2025_earnings.md", "acme_q3_2025_earnings_report.pdf"]
+  },
+  {
+    "question": "How much revenue did Acme's AI accelerator chips generate in Q3 2025?",
+    "ground_truth": "AI accelerator chip revenue was $350 million, up 180% from $125 million in Q3 2024.",
+    "source_documents": ["acme_q3_2025_earnings.md"]
+  },
+  {
+    "question": "How much did Acme pay for the NeuralPath acquisition?",
+    "ground_truth": "Acme acquired NeuralPath Inc. for $180 million, adding 45 AI researchers and proprietary training data.",
+    "source_documents": ["acme_q3_2025_earnings.md"]
+  },
+  {
+    "question": "What percentage of Acme's total revenue comes from cloud services in Q3 2025?",
+    "ground_truth": "Cloud services now represents 50% of total revenue, up from 45% a year ago.",
+    "source_documents": ["acme_q3_2025_earnings.md"]
+  },
+  {
+    "question": "What was Acme's free cash flow in Q3 2025?",
+    "ground_truth": "Free cash flow was $890 million, up 22.8% year-over-year from $725 million.",
+    "source_documents": ["acme_q3_2025_earnings.md"]
+  },
+  {
+    "question": "How many new enterprise contracts did Acme's cloud division sign in Q3 2025?",
+    "ground_truth": "The cloud division signed 47 new enterprise contracts worth over $1 million each during Q3 2025, compared to 32 such contracts in Q3 2024.",
+    "source_documents": ["acme_q3_2025_earnings.md"]
+  },
+  {
+    "question": "What are Acme's primary chip suppliers and their percentages?",
+    "ground_truth": "Acme's primary chip suppliers are NVIDIA (45%), Intel (30%), and AMD (25%).",
+    "source_documents": ["acme_q3_2025_earnings.md"]
+  },
+  {
+    "question": "What was Acme's R&D spending in Q3 2025 and what percentage went to AI?",
+    "ground_truth": "R&D spending was $630 million in Q3, with approximately 40% ($252 million) directed toward AI and machine learning capabilities.",
+    "source_documents": ["acme_q3_2025_earnings.md"]
+  },
+  {
+    "question": "What is Acme's full-year revenue guidance?",
+    "ground_truth": "Acme raised full-year revenue guidance to $16.5-16.8 billion, previously $16.0-16.5 billion.",
+    "source_documents": ["acme_q3_2025_earnings.md"]
+  },
+  {
+    "question": "What was Acme's international revenue breakdown by region in Q3 2025?",
+    "ground_truth": "North America: $2.73B (65%), Europe: $840M (20%, up 18% YoY), Asia Pacific: $420M (10%, up 32% YoY), Rest of World: $210M (5%, up 28% YoY).",
+    "source_documents": ["acme_q3_2025_earnings.md"]
+  },
+  {
+    "question": "What was Acme's gross margin in Q3 2025?",
+    "ground_truth": "Gross margin was 60%, up 300 basis points from 57% in Q3 2024.",
+    "source_documents": ["acme_q3_2025_earnings.md"]
+  },
+  {
+    "question": "How much did Acme's EPS grow in Q3 2025?",
+    "ground_truth": "Diluted EPS was $3.15, up 23.5% from $2.55 in Q3 2024.",
+    "source_documents": ["acme_q3_2025_earnings.md"]
+  },
+  {
+    "question": "What was Acme's net income in Q3 2025?",
+    "ground_truth": "Net income was $756 million, up 23.5% from $612 million in Q3 2024.",
+    "source_documents": ["acme_q3_2025_earnings.md"]
+  },
+  {
+    "question": "What was Acme Corporation's total revenue in Q2 2025?",
+    "ground_truth": "Acme's total revenue in Q2 2025 was $3.9 billion, up 13% year-over-year.",
+    "source_documents": ["acme_q2_2025_earnings.md"]
+  },
+  {
+    "question": "How much was Acme's cloud revenue in Q2 2025?",
+    "ground_truth": "Cloud revenue was $1.85 billion in Q2 2025, up 25% year-over-year.",
+    "source_documents": ["acme_q2_2025_earnings.md"]
+  },
+  {
+    "question": "What was Acme's customer churn rate improvement in Q2 2025?",
+    "ground_truth": "Customer churn rate improved to 3.2% from 4.1% a year ago.",
+    "source_documents": ["acme_q2_2025_earnings.md"]
+  },
+  {
+    "question": "What new products did Acme launch as mentioned in Q2 2025?",
+    "ground_truth": "Acme launched Acme CloudShield (cloud-native security platform, $45M first-quarter bookings) and Acme Edge AI Box (on-premises AI inference device, shipping to first 200 customers).",
+    "source_documents": ["acme_q2_2025_earnings.md"]
+  },
+  {
+    "question": "How much was Acme's AI accelerator revenue in Q2 2025?",
+    "ground_truth": "AI accelerator revenue was $280 million, up 155% year-over-year.",
+    "source_documents": ["acme_q2_2025_earnings.md"]
+  },
+  {
+    "question": "What is TechGiant Corporation's total annual revenue for 2024?",
+    "ground_truth": "TechGiant's total revenue for FY2024 was $12.8 billion, up 15% year-over-year.",
+    "source_documents": ["techgiant_annual_2024.md"]
+  },
+  {
+    "question": "What is TechGiant's enterprise cloud market share?",
+    "ground_truth": "TechGiant holds 12% of the enterprise cloud market. Hyperscalers (AWS/Azure/GCP) hold 65%, Acme holds 8%, and others hold 15%.",
+    "source_documents": ["techgiant_annual_2024.md"]
+  },
+  {
+    "question": "Who are TechGiant's main competitors?",
+    "ground_truth": "TechGiant's main competitors are Acme Corporation (direct competitor in cloud and AI), GlobalSoft Inc. (stronger in traditional enterprise software), and CloudFirst Ltd. (pure-play cloud competitor).",
+    "source_documents": ["techgiant_annual_2024.md"]
+  },
+  {
+    "question": "How much did TechGiant spend on R&D in FY2024?",
+    "ground_truth": "TechGiant's R&D spending was $2.56 billion (20% of revenue), with 40% ($1.02B) on AI/ML, 25% ($640M) on cloud infrastructure, 20% ($512M) on security, and 15% ($384M) on developer tools.",
+    "source_documents": ["techgiant_annual_2024.md"]
+  },
+  {
+    "question": "What is TechGiant's revenue guidance for FY2025?",
+    "ground_truth": "TechGiant's FY2025 revenue guidance is $14.5-15.0 billion (13-17% growth), with subscription revenue growth of 20-25% and operating margin target of 23-25%.",
+    "source_documents": ["techgiant_annual_2024.md"]
+  },
+  {
+    "question": "How many patents does TechGiant hold?",
+    "ground_truth": "TechGiant holds 3,200 patents, with 480 new patents filed in FY2024.",
+    "source_documents": ["techgiant_annual_2024.md"]
+  },
+  {
+    "question": "What are TechGiant's key technology suppliers?",
+    "ground_truth": "TechGiant's key suppliers are NVIDIA (primary GPU supplier, 60% of AI compute), Intel (CPU supplier, 45% of server CPUs), Samsung (memory and storage), and TSMC (custom chip fabrication).",
+    "source_documents": ["techgiant_annual_2024.md"]
+  },
+  {
+    "question": "How does Acme's Q3 2025 revenue compare to Q2 2025?",
+    "ground_truth": "Acme's revenue grew from $3.9 billion in Q2 2025 to $4.2 billion in Q3 2025, an increase of approximately $300 million or 7.7% quarter-over-quarter.",
+    "source_documents": ["acme_q3_2025_earnings.md", "acme_q2_2025_earnings.md"]
+  },
+  {
+    "question": "What was TechGiant's subscription revenue percentage of total revenue?",
+    "ground_truth": "Subscription revenue was 68% of total revenue, up from 62% in FY2023.",
+    "source_documents": ["techgiant_annual_2024.md"]
+  },
+  {
+    "question": "What ESG achievements did TechGiant report for FY2024?",
+    "ground_truth": "TechGiant achieved carbon neutral operations, invested $150M in renewable energy for data centers, 45% of leadership positions held by underrepresented groups, and committed $50M annually to STEM education.",
+    "source_documents": ["techgiant_annual_2024.md"]
+  }
+]

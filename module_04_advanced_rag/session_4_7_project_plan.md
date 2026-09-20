@@ -112,10 +112,23 @@ module_04_advanced_rag/
 | **Vector DB** | ChromaDB (local, in-process) | Zero setup, pip install |
 | **Sparse search** | `rank_bm25` Python package | Pure Python BM25 |
 | **Reranker** | `sentence-transformers/cross-encoder/ms-marco-MiniLM-L-6-v2` | Free, local |
-| **Framework** | LangChain (matches Module 8) | Already familiar |
+| **Framework** | Pure Python first; LangChain only at edges (adapter pattern) | See Architecture Principle below |
 | **Evaluation** | RAGAS library | Standard for RAG evaluation |
 | **UI** | Streamlit | Fast to build |
 | **Multimodal** | LLM-described images (Approach 2) | Works without GPU |
+
+### Architecture Principle: Pure Python First
+
+> **Rule:** Use pure Python (`@dataclass`, native ChromaDB API, raw `requests`/`httpx` for LLM calls)
+> for all core domain logic. Only use LangChain/LlamaIndex at the **edges** via adapter methods
+> (e.g. `to_langchain()`), and only when a LangChain utility genuinely saves significant effort
+> (e.g. RAGAS evaluation expects LangChain objects).
+>
+> **Why?**
+> - **Zero framework lock-in:** If LangChain breaks or changes APIs, our ingestion/retrieval/generation code is untouched.
+> - **Interview signal:** Staff/Principal architects define their own domain models; juniors couple everything to the tutorial framework.
+> - **Debuggability:** When something breaks, you're debugging YOUR code with standard Python, not stepping through 12 layers of LangChain abstraction.
+> - **Enterprise reality:** Production ML systems at Google, Meta, Stripe all use internal domain entities — frameworks are adapters, not the core.
 
 **Note:** We use LLM-described images (Approach 2) instead of ColPali because ColPali requires a GPU. For interviews, explain ColPali conceptually (Session 4.5 notes) and show this working implementation as proof. The architecture is designed so ColPali could be swapped in later.
 
@@ -134,6 +147,7 @@ llm = ChatOpenAI(
     }
 )
 ```
+
 
 ---
 

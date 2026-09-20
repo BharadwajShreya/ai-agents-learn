@@ -78,7 +78,7 @@ tools = [calculator, web_search]
 #   - Ollama:      http://localhost:11434/v1
 
 llm = ChatOpenAI(
-    model="google/gemma-4-26b-a4b-it:free",    # Free model with tool support
+    model="nex-agi/nex-n2.5-mini:free",    # Free model with tool support
     openai_api_key=os.environ.get("OPENROUTER_API_KEY", ""),
     openai_api_base="https://openrouter.ai/api/v1",
     temperature=0,

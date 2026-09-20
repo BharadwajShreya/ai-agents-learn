@@ -1,0 +1,24 @@
+# Virtual environment
+venv/
+
+# Environment variables (contains API keys)
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# ChromaDB data (large, regeneratable)
+data/chroma_db/
+
+# Extracted images from PDFs (regeneratable)
+data/sample_docs/extracted_images/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
